@@ -217,10 +217,10 @@ myAudio.addEventListener('pause', updateButton);
 function playPause(btn) {
     if(myAudio.paused) {
         myAudio.play();
-        playBtn.src = `imgs/_ionicons_svg_md-pause.svg`;
+        playBtn.src = `imgs/pause.svg`;
     } else {
         myAudio.pause();
-        playBtn.src = `imgs/_ionicons_svg_md-play.svg`;
+        playBtn.src = `imgs/play.svg`;
     }
 }
 
