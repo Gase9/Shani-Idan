@@ -1,0 +1,333 @@
+:root {
+    --gold: rgb(214,195,114);
+    --dark-red: rgb(51,51,51);
+    --dark-blue: rgb(23,60,110);
+    --white: rgb(255, 255, 255);
+    --main-font: 'Dancing Script', cursive;
+    --numbers-font: 'Montserrat', sans-serif;
+    --italic-font: 'Lovers+Quarrel', cursive;
+    --basic-font: 'Mali', sans-serif;
+}
+
+/* DEFAULT */
+html,body {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+input {
+    border-radius: 0%;
+}
+
+div {
+    outline-style: none;
+}
+
+#cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    
+    background: url();
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(129, 59, 59, 0.5);
+    background-blend-mode: overlay;
+    /* opacity: 0.8; */
+    box-shadow: inset 0 0 50px #000000;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    width: 52vw;
+    height: 6em;
+    margin-top: 2em;
+}
+
+
+.title h1 {
+    font-family: var(--main-font);
+    font-size: 6em;
+    text-shadow: 2px 5px 8px rgba(0,0,0,0.5);
+    color: var(--gold);
+}
+
+.title img {
+    width: 6em;
+    height: 6em;
+    margin: 0 1.5em;
+    -webkit-filter: drop-shadow(1px 1px 25px rgb(0, 0, 0));
+}
+
+audio {
+    display: none;
+}
+
+.player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3em;
+}
+
+.player_controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.3em;
+    border-radius: 8px;
+    color: var(--white);
+}
+
+.play {
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background: none;
+    color: var(--white);
+}
+
+#playBtn {
+    width: 2em;
+    height: 2em;
+}
+
+.player_controls img {
+    width: 1em;
+    height: 1em;
+}
+
+p {
+    text-align: center;
+    font-size: 1.9em;
+    width: 45vw;
+    margin-top: 3em;
+    color: var(--white);
+    font-family: var(--basic-font);
+}
+
+q {
+    font-family: var(--italic-font);
+    font-style: italic;
+}
+
+.counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    margin-top: 5em;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+}
+
+.square {
+    color: var(--white);
+    width: 100%;
+    height: 50%;
+    margin: 0 0.2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background: rgba(0,0,0,0.2); */
+    font-family: var(--numbers-font);
+    padding: 0.2em;
+    text-shadow: 1px 0 10px rgba(0,0,0,0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.4);
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.square:first-child {
+    border: none;
+}
+
+.square:nth-child(2) {
+    border-right: 0;
+}
+
+.square:last-child {
+    border: none;
+}
+
+.square h1 {
+    font-size: 6em;
+    margin: 0;
+}
+
+.square h2 {
+    margin-top: -0.8em;
+    text-transform: uppercase;
+}
+
+
+
+
+/*
+##Device = Tablets, Ipads (portrait), Laptops, Desktops
+##Screen = B/w 768px to 1280px
+*/
+
+@media (min-width: 768px) and (max-width: 1280px) {
+
+    p {
+        margin: 0.5em;
+        width: 100vw;
+    }
+
+    .counter {
+        margin-top: 0.5em;
+    }
+
+    .title {
+        margin-top: 1em;
+    }
+
+    .title h1 {
+        font-size: 4em;
+    }
+    
+    .title img {
+        width: 4em;
+        height: 4em;
+    }
+
+    p {
+        font-size: 1.5em;
+        width: 55vw;
+    }
+
+    .counter {
+        margin-top: 0;
+        width: 80vw;
+    }
+
+    .square h1 {
+        font-size: 4.5em;
+    }
+    
+    .square h2 {
+        font-size: 1em;
+    }
+
+    .player {
+       width: 40vw;
+    }
+
+}
+
+
+/* 
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+
+    p {
+        margin: 0.5em;
+        width: 100vw;
+    }
+
+    .counter {
+        margin-top: 0.5em;
+    }
+
+    .title h1 {
+        font-size: 3em;
+    }
+    
+    .title img {
+        width: 4em;
+        height: 4em;
+    }
+
+    p {
+        font-size: 1.5em;
+        width: 55vw;
+    }
+
+    .counter {
+        margin-top: 0;
+        width: 80vw;
+    }
+
+    .square h1 {
+        font-size: 4.5em;
+    }
+    
+    .square h2 {
+        font-size: 1em;
+    }
+
+    .player {
+        width: 40vw;
+     }
+}
+
+
+/* 
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .title h1 {
+        font-size: 4em;
+    }
+    
+    .title img {
+        width: 3em;
+        height: 3em;
+    }
+
+    p {
+        font-size: 1.5em;
+        width: 55vw;
+    }
+
+    .counter {
+        width: 90vw;
+    }
+
+    .square h1 {
+        font-size: 3.5em;
+    }
+    
+    .square h2 {
+        font-size: 0.7em;
+    }
+
+    .player {
+        width: 40vw;
+     }
+
+}

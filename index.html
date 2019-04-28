@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Niconne|Montserrat|Mali|Lovers+Quarrel" rel="stylesheet">
+    <title>Shani & Idan's Wedding</title>
+</head>
+<body>
+    <div id="cover"></div>
+    <div class="container">
+        <div class="title">
+            <h1>Shani</h1>
+            <img src="imgs/wedding-rings.svg" alt="Rings">
+            <h1>Idan</h1>
+        </div>
+        <!-- <div class="circle">
+            <div class="circle"></div>
+            <div class="value">50</div>
+        </div> -->
+        <div class="sentence">
+            <p><q id="songLine"></q><br><span id="author"></span></p>
+        </div>
+        <div class="player">
+                <audio controls id="myAudio" autoplay preload="auto" webkit-playsinline="true" x-webkit-airplay="true" data-setup="{}">
+                    <source src="" type="audio/mpeg">
+                </audio>
+                <div class="player_controls">
+                    <button class="play" onclick="playPause(this)"><img id="playBtn" src="imgs/_ionicons_svg_md-play.svg" alt=""></button>
+                    <!-- <span class="currentTime"></span> / <span class="length"></span> -->
+                    <!-- <input class="durationSlider" type="range" min="0" max="100" value="20" step="1"> -->
+                    <img src="imgs/_ionicons_svg_md-volume-high.svg" alt="">
+                    <input type="range" name="volume" class="volume" min="0" max="1" step="0.05" value="1">
+                </div>
+            </div>
+        <div class="counter">
+            <div class="square">
+                <h1 class="days"></h1>
+                <h2>Days</h2>
+            </div>
+            <div class="square">
+                <h1 class="hours"></h1>
+                <h2>Hours</h2>
+            </div>
+            <div class="square">
+                <h1 class="minutes"></h1>
+                <h2>Minutes</h2>
+            </div>
+            <div class="square">
+                <h1 class="seconds"></h1>
+                <h2>Seconds</h2>
+            </div>
+        </div>
+        <!-- <audio controls>
+            <source src="audio/Alicia Keys - If I Aint Got You.mp3" type="audio/mpeg">
+        </audio> -->
+        <!-- <div class="player">
+            <audio controls>
+                <source src="audio/1.mp3" type="audio/mpeg">
+            </audio>
+           
+                <div class="player__controls">
+                <div class="progress__filled"></div>
+                <button class="player__button toggle" title="Toggle Play">►</button>
+                <input type="range" name="volume" class="player__slider" min="0" max="1" step="0.05" value="1">
+            </div>
+        </div> -->
+
+    </div>
+
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
