@@ -225,7 +225,7 @@ function playPause(btn) {
 }
 
 function updateButton() {
-    const icon = this.paused ? 'imgs/_ionicons_svg_md-play.svg' : 'imgs/_ionicons_svg_md-pause.svg';
+    const icon = this.paused ? 'imgs/play.svg' : 'imgs/pause.svg';
     playBtn.src = icon;
 }
 
