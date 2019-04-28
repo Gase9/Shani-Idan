@@ -230,7 +230,9 @@ function updateButton() {
 }
 
 function changeVolume(e) {
+    myAudio.setVolume = e.target.value;
     myAudio.volume = e.target.value;
+    document.querySelector('#test').innerHTML = `Audio Volume ${myAudio.volume} <br> target vol ${e.target.value}`;
 }
 
 function changeLength() {

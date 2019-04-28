@@ -93,6 +93,7 @@ audio {
 
 .player {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 3em;
@@ -252,6 +253,14 @@ q {
 */
 @media (min-width: 481px) and (max-width: 767px) {
 
+    audio {
+        display: flex;
+    }
+    
+    .player_controls {
+        display: none;
+    }
+
     p {
         margin: 0.5em;
         width: 100vw;
@@ -300,6 +309,14 @@ q {
 */
 @media (min-width: 320px) and (max-width: 480px) {
 
+    audio {
+        display: flex;
+    }
+    
+    .player_controls {
+        display: none;
+    }
+    
     .title h1 {
         font-size: 4em;
     }
