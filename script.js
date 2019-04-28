@@ -270,10 +270,34 @@ function updateDaily() {
     for(i=0;i<sent.length;i++) {
         if(sent[i].id === days) {
             cover.style.background = `url(imgs/${days}.jpg)`;
-            cover.style.backgroundPosition = 'center';
+            cover.style.backgroundPositionX = 'center';
             cover.style.backgroundSize = 'cover';
             cover.style.backgroundColor = 'rgba(129, 59, 59, 0.5)';
             cover.style.backgroundBlendMode = 'overlay';
+
+            if(days === 0) {
+                cover.style.backgroundPositionY = '70%';
+            }
+            if(days === 1 || days === 3 || days === 11 || days === 13 || days === 20 || days === 21 || days === 22) {
+                cover.style.backgroundPositionY = '30%';
+            }
+            if(days === 6 || days === 28) {
+                cover.style.backgroundPositionY = '50%';
+            }
+            if(days === 7 || days === 14) {
+                cover.style.backgroundPositionY = '60%';
+            }
+            if(days === 8 || days === 10 || days === 17 || days === 25 || days === 26) {
+                cover.style.backgroundPositionY = '40%';
+            }
+            if(days === 16 || days === 23) {
+                cover.style.backgroundPositionY = '20%';
+            }
+            if(days === 19 || days === 27) {
+                cover.style.backgroundPositionY = '10%';
+            }
+            
+
             songLine.innerHTML = sent[i].sentence;
             author.innerHTML = sent[i].author;
             myAudio.src = `audio/${days}.mp3`;

@@ -45,8 +45,8 @@ div {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
-    background-position: center;
+    background-position-x: center;
+    background-position-y: center;
     background-color: rgba(129, 59, 59, 0.5);
     background-blend-mode: overlay;
     /* opacity: 0.8; */
