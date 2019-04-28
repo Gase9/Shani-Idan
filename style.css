@@ -200,6 +200,14 @@ q {
 
 @media (min-width: 768px) and (max-width: 1280px) {
 
+    audio {
+        display: flex;
+    }
+    
+    .player_controls {
+        display: none;
+    }
+    
     p {
         margin: 0.5em;
         width: 100vw;
