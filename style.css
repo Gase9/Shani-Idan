@@ -122,6 +122,7 @@ audio {
 }
 
 .player_controls img {
+    background: rgba(255,255,255,0.4);
     width: 1em;
     height: 1em;
 }
